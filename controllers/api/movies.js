@@ -12,6 +12,7 @@ const index = async (req, res) => {
 
 // Create a movie
 const create = async (req, res) => {
+   
     try {
         const createdMovie = await Movie.create(req.body)
         res.status(200).json(createdMovie)
